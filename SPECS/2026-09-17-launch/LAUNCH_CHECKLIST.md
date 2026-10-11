@@ -6,21 +6,21 @@ Stage 6 of the roadmap. Work top to bottom.
 
 These are unfinished spots that would look broken to a stranger.
 
-- [ ] **Every button says `href="#"`.** The gold "Write my first story" buttons (navbar, hero, bottom CTA) currently go nowhere, and clicking them jumps to the top. Decide a real destination.
-- [ ] **Testimonials are marked "(placeholder)".** They are fake right now. Never ship fake quotes with your name on them. Decide: remove them, or clearly label them as *example* stories.
-- [ ] The brand/logo link (`MySTAR` top-left) also points to `#` — normally it should scroll to the top / hero.
+- [x] **Every button says `href="#"`.** *(DONE: all gold CTAs now point to `#solution`.)*
+- [x] **Testimonials are marked "(placeholder)".** *(DONE: section relabeled "Examples" with an honesty note; each card reads "Example story, not a real customer".)*
+- [x] The brand/logo link (`MySTAR` top-left) also points to `#` — *(DONE: points to `#top`.)*
 
 ## 2. Run the human test
 
-- [ ] Do the 1-Minute Human Test (see `HUMAN_TEST.md`).
+- [ ] Do the 1-Minute Human Test (see `HUMAN_TEST.md`).  ← **your turn**
 - [ ] Write down the 3 most critical issues.
 - [ ] Fix only those 3.
 
 ## 3. Save your work with Git
 
-- [ ] `git init` inside `build-lab/` (or the workspace root).
-- [ ] Add a `.gitignore` (see note below).
-- [ ] `git add` and make the first commit: "MySTAR landing page v1".
+- [x] `git init` inside `build-lab/`. *(DONE — branch `main`.)*
+- [x] Add a `.gitignore`. *(DONE.)*
+- [x] `git add` and make the first commit: "MySTAR landing page v1". *(DONE — commit `ca2beff`.)*
 
 ## 4. Show it to the world
 
