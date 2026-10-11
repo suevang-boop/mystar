@@ -6,7 +6,7 @@ This is the six-stage journey from blank canvas to live startup. Each stage buil
 
 ## Current State
 
-> **Stages 1–5 complete.** `MISSION.md` holds the full founder record (problem, brand, page architecture, mini-spec). `build-lab/index.html` + `style.css` contain the full landing page: base shell, design tokens, Navbar, Hero, all content sections, motion, and the quality-audit fixes. `script.js` is still the untouched empty template. Next up: Stage 6 (test, show, ship).
+> **Stages 1–5 complete; Stage 6 shipped to GitHub Pages.** `MISSION.md` holds the full founder record (problem, brand, page architecture, mini-spec). `build-lab/index.html` + `style.css` contain the full landing page: base shell, design tokens, Navbar, Hero, all content sections, motion, and the quality-audit fixes. `script.js` + `star-parser.js` now implement the **Scenario → STAR** builder (paste → Form STAR → edit → copy). The Examples section also holds a full **worked example**. Remaining Stage 6 item: the 1-Minute Human Test.
 
 ---
 

@@ -85,6 +85,7 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 | 2026-09-17 | Hero copy (peer-testing fix) | Tagline hero vs Problem-first vs Audience-first vs Outcome-first | **Problem-first.** Headline: "Turn 'tell me about a time…' into an answer that lands." Subheadline: "New to interviews? MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result, live on screen." Rationale: peer testers couldn't tell who it was for or what problem it solved. The old tagline stays as the brand tagline (`<title>` + footer). | Done |
 | 2026-09-17 | Ship & submit (Stage 6) | Where to host; repo owner | Pushed to GitHub (`suevang-boop/mystar`), deployed with GitHub Pages (serve from `main`/root), recorded submission. Repo is public; live at https://suevang-boop.github.io/mystar/. | Done |
 | 2026-09-17 | Scenario → STAR section | File upload vs paste; AI vs rules; auto vs assisted | **Paste + Form STAR**, **browser rules (no AI)**, **assisted (guess + user fixes)**. Plain-text only; no server; saved in `localStorage`. Spec: `SPECS/2026-09-17-scenario-to-star/`. Built on branch `feature/document-upload` with plain-JS parser tests (13 passing). | Done |
+| 2026-09-17 | Worked example (Examples section) | Add a full sample story? keep real or sanitize? | Added one **full S/T/A/R worked example** below the quotes. Copy **de-identified** (no company/internal tool/personal names) before publishing. Static card — no new motion. Spec: `SPECS/2026-09-17-worked-example/`. | Done |
 | *YYYY-MM-DD* | *e.g., Primary CTA* | *Waitlist vs Direct Purchase* | *Waitlist — lower friction for initial validation* | *Done* |
 | | | | | |
 | | | | | |
@@ -224,8 +225,13 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
 
 6. **Examples** *(was "Social Proof" — relabeled Stage 6 so nothing claims a real customer)*
    - **Headline:** "See the kind of story you'll build."
-   - **Honesty note:** "Illustrative examples from our own test runs — not real customer quotes."
+   - **Honesty note:** "One worked example and two quick notes from our own writing — illustrative, not real customer testimonials."
    - Two example stories (each credited "Example story, not a real customer"): *"Went from a blank screen to a story I'd actually say in an interview — in ten minutes."* · *"Finally understood what S-T-A-R actually means."* (Swap for real quotes after the human test.)
+   - **Worked example** *(added 2026-09-17)* — a full S/T/A/R story, de-identified from the founder's own experience (no company name, no internal tool names):
+     - **S:** A partner team received several pallets of perishable consumables they don't normally handle, so they asked me how to sort it out.
+     - **T:** Find out why the pallets arrived, what the root cause was, and the right next step for the products.
+     - **A:** I pulled the details from our internal tracking tools and advised the stakeholder. The units had already been liquidated for missing transparency codes, so I laid out two options: leave them as-is, or fix the root cause so sellable units could safely return to inventory.
+     - **R:** The team avoided re-handling units that were already liquidated — an estimated $50K in labor and cost — and worked with the upstream team so the issue wouldn't happen again.
 
 7. **CTA**
    - **Headline:** "The hardest question, already answered."
