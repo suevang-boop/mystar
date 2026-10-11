@@ -24,17 +24,17 @@ These are unfinished spots that would look broken to a stranger.
 
 ## 4. Show it to the world
 
-- [ ] **Quickest option:** the Codio URL already works —
+- [x] **Quickest option:** the Codio URL works —
       https://adriancongo-neptunejames-3000.codio.io/ (only live while the box runs).
-- [ ] **Real option:** push to GitHub, then turn on GitHub Pages, or connect the
-      repo to Netlify / Vercel. These give a permanent public link.
+- [x] **Real option (DONE):** pushed to GitHub and enabled **GitHub Pages** (serve from `main` / root).
+      Permanent public link: https://suevang-boop.github.io/mystar/
 
 ## 5. Submit
 
-- [ ] Startup name: **MySTAR**
-- [ ] Value prop: "Turn any experience into a polished STAR interview story."
-- [ ] GitHub URL: (fill in after step 3–4)
-- [ ] Public URL: (Codio URL above, or your new deploy link)
+- [x] Startup name: **MySTAR**
+- [x] Value prop: "Turn any experience into a polished STAR interview story."
+- [x] GitHub URL: https://github.com/suevang-boop/mystar
+- [x] Public URL: https://suevang-boop.github.io/mystar/
 
 ---
 
