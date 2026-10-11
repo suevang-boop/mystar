@@ -83,6 +83,7 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 | 2026-09-17 | Stage 6 pre-launch placeholders | CTA `#` target; fake testimonials | CTAs → `#solution` (safe interim); "Testers" relabeled **Examples** with an honesty note and "not a real customer" credits; brand logo → `#top`. | Done |
 | 2026-09-17 | Stage 6 git | Skip git vs commit locally vs push | `git init` + `.gitignore` + first commit **locally**; student pushes to GitHub/deploys when ready. | Done |
 | 2026-09-17 | Hero copy (peer-testing fix) | Tagline hero vs Problem-first vs Audience-first vs Outcome-first | **Problem-first.** Headline: "Turn 'tell me about a time…' into an answer that lands." Subheadline: "New to interviews? MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result, live on screen." Rationale: peer testers couldn't tell who it was for or what problem it solved. The old tagline stays as the brand tagline (`<title>` + footer). | Done |
+| 2026-09-17 | Ship & submit (Stage 6) | Where to host; repo owner | Pushed to GitHub (`suevang-boop/mystar`), deployed with GitHub Pages (serve from `main`/root), recorded submission. Repo is public; live at https://suevang-boop.github.io/mystar/. | Done |
 | *YYYY-MM-DD* | *e.g., Primary CTA* | *Waitlist vs Direct Purchase* | *Waitlist — lower friction for initial validation* | *Done* |
 | | | | | |
 | | | | | |
@@ -122,6 +123,17 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 ### Launch Prep — 2026-09-17 (ROADMAP Stage 6)
 
 Stage-6 kit created in `build-lab/SPECS/2026-09-17-launch/`: `HUMAN_TEST.md` (the 1-Minute Human Test script + scoring sheet) and `LAUNCH_CHECKLIST.md` (placeholders → git → deploy → submit). Founder decisions this stage: CTAs → `#solution`; testimonials → relabeled as examples; git → initialize locally and make the first commit (student pushes to GitHub when ready).
+
+### Submission — 2026-09-17 (ROADMAP Stage 6)
+
+| # | Item | Value |
+| :-- | :--- | :--- |
+| 1 | Startup Name | **MySTAR** |
+| 2 | Value Prop | *We help people with no interview experience solve the "tell me about a time…" problem by interviewing them one question at a time and building their answer into a clear Situation · Task · Action · Result story, live on screen.* |
+| 3 | GitHub Repo URL | https://github.com/suevang-boop/mystar |
+| 4 | Public Deployed URL | https://suevang-boop.github.io/mystar/ |
+
+Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
 
 
 ---

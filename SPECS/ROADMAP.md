@@ -61,11 +61,11 @@ This is the six-stage journey from blank canvas to live startup. Each stage buil
 ## Stage 6 — Test, Show, and Ship
 **Goal:** Get real feedback and launch publicly.
 
-- [ ] Run the 1-Minute Human Test with a peer
+- [ ] Run the 1-Minute Human Test with a peer  ← still to do (script ready: `SPECS/2026-09-17-launch/HUMAN_TEST.md`)
 - [ ] Triage feedback and fix the 3 most critical items
-- [ ] Commit and push to GitHub
-- [ ] Deploy to GitHub Pages, Vercel, or Netlify
-- [ ] Submit: Startup Name, Value Prop, GitHub URL, Public URL
+- [x] Commit and push to GitHub → https://github.com/suevang-boop/mystar
+- [x] Deploy to GitHub Pages → https://suevang-boop.github.io/mystar/
+- [x] Submit: Startup Name, Value Prop, GitHub URL, Public URL  (recorded in `build-lab/MISSION.md` §5)
 
 ---
 
