@@ -419,6 +419,43 @@ section[id] {
   font-size: 0.875rem;
 }
 
+/* Worked example — a full STAR story (static: motion budget is spent) */
+.worked-example {
+  margin-top: var(--space-4);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+
+.worked-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.worked-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+  margin-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.worked-label {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.worked-text {
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
 /* =============================================
    Content sections — CTA
    ============================================= */
