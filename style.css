@@ -498,6 +498,197 @@ section[id] {
 }
 
 /* =============================================
+   Builder — Scenario → STAR
+   ============================================= */
+
+.builder {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.builder h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.builder-intro {
+  margin-top: var(--space-3);
+  max-width: 640px;
+  color: var(--color-text-muted);
+}
+
+.builder-label {
+  display: block;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.builder-input {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  padding: var(--space-3);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.builder-input:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+.builder-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+button.btn {
+  cursor: pointer;
+}
+
+.builder-message {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.builder-result {
+  margin-top: var(--space-5);
+}
+
+.star-buckets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.bucket-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  margin-bottom: var(--space-2);
+}
+
+.bucket-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-primary);
+}
+
+.bucket-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-height: 40px;
+}
+
+.piece {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.piece-text {
+  font-size: 0.9375rem;
+}
+
+.piece-text:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.piece-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.piece-move-label {
+  margin-right: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.piece-move {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.piece-move:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.piece-move:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.builder-preview {
+  margin-top: var(--space-5);
+  padding: var(--space-5);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.preview-title {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  margin-bottom: var(--space-3);
+}
+
+.preview-text {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--color-text);
+}
+
+#copy-star {
+  margin-top: var(--space-4);
+}
+
+/* =============================================
    Content sections — Responsive
    ============================================= */
 
@@ -507,6 +698,16 @@ section[id] {
   }
 
   .quote-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .star-buckets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .star-buckets {
     grid-template-columns: 1fr;
   }
 }

@@ -71,6 +71,46 @@
       <p>When you finish, you hold a real, reusable story.</p>
     </section>
 
+    <section class="builder container" id="builder">
+      <h2>Paste a scenario. Get a STAR story.</h2>
+      <p class="builder-intro">Paste a note, a scenario, or an example below and press Form STAR. The page sorts it into Situation · Task · Action · Result — then you move and edit the pieces until it reads right.</p>
+
+      <label class="builder-label" for="scenario-input">Your scenario</label>
+      <textarea id="scenario-input" class="builder-input" rows="6" placeholder="Paste your scenario or an example here…"></textarea>
+
+      <div class="builder-actions">
+        <button type="button" class="btn btn-secondary" id="form-star">Form STAR</button>
+        <p class="builder-message" id="builder-message" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="builder-result" id="builder-result" hidden>
+        <div class="star-buckets">
+          <div class="bucket">
+            <h3 class="bucket-title"><span class="bucket-code">S</span> Situation</h3>
+            <div class="bucket-list" id="bucket-s"></div>
+          </div>
+          <div class="bucket">
+            <h3 class="bucket-title"><span class="bucket-code">T</span> Task</h3>
+            <div class="bucket-list" id="bucket-t"></div>
+          </div>
+          <div class="bucket">
+            <h3 class="bucket-title"><span class="bucket-code">A</span> Action</h3>
+            <div class="bucket-list" id="bucket-a"></div>
+          </div>
+          <div class="bucket">
+            <h3 class="bucket-title"><span class="bucket-code">R</span> Result</h3>
+            <div class="bucket-list" id="bucket-r"></div>
+          </div>
+        </div>
+
+        <div class="builder-preview">
+          <h3 class="preview-title">Your STAR story</h3>
+          <pre class="preview-text" id="star-preview"></pre>
+          <button type="button" class="btn btn-secondary" id="copy-star">Copy story</button>
+        </div>
+      </div>
+    </section>
+
     <section class="features container" id="features">
       <h2>Everything you need. Nothing you don't.</h2>
       <div class="feature-grid">
@@ -136,6 +176,7 @@
     </div>
   </footer>
 
+  <script src="star-parser.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

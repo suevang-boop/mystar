@@ -84,6 +84,7 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 | 2026-09-17 | Stage 6 git | Skip git vs commit locally vs push | `git init` + `.gitignore` + first commit **locally**; student pushes to GitHub/deploys when ready. | Done |
 | 2026-09-17 | Hero copy (peer-testing fix) | Tagline hero vs Problem-first vs Audience-first vs Outcome-first | **Problem-first.** Headline: "Turn 'tell me about a time…' into an answer that lands." Subheadline: "New to interviews? MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result, live on screen." Rationale: peer testers couldn't tell who it was for or what problem it solved. The old tagline stays as the brand tagline (`<title>` + footer). | Done |
 | 2026-09-17 | Ship & submit (Stage 6) | Where to host; repo owner | Pushed to GitHub (`suevang-boop/mystar`), deployed with GitHub Pages (serve from `main`/root), recorded submission. Repo is public; live at https://suevang-boop.github.io/mystar/. | Done |
+| 2026-09-17 | Scenario → STAR section | File upload vs paste; AI vs rules; auto vs assisted | **Paste + Form STAR**, **browser rules (no AI)**, **assisted (guess + user fixes)**. Plain-text only; no server; saved in `localStorage`. Spec: `SPECS/2026-09-17-scenario-to-star/`. Built on branch `feature/document-upload` with plain-JS parser tests (13 passing). | Done |
 | *YYYY-MM-DD* | *e.g., Primary CTA* | *Waitlist vs Direct Purchase* | *Waitlist — lower friction for initial validation* | *Done* |
 | | | | | |
 | | | | | |
@@ -209,18 +210,24 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
    - "No blank pages, no templates to memorize. Answer a few plain questions in the order a good story needs — the S-T-A-R fills in live as you go."
    - "When you finish, you hold a real, reusable story."
 
-4. **Features**
+4. **Builder — Scenario → STAR** *(added 2026-09-17; first slice of the real tool)*
+   - **Headline:** "Paste a scenario. Get a STAR story."
+   - **Intro:** "Paste a note, a scenario, or an example below and press Form STAR. The page sorts it into Situation · Task · Action · Result — then you move and edit the pieces until it reads right."
+   - A textarea + a **Form STAR** button (secondary, not a second gold CTA). The text is split into sentences, each guessed into S/T/A/R by simple rules; the user then moves/edits pieces. Live preview + **Copy story**; saved in `localStorage`.
+   - All in the browser — no AI, no server, no files. See `SPECS/2026-09-17-scenario-to-star/`.
+
+5. **Features**
    - **Headline:** "Everything you need. Nothing you don't."
    - **Live STAR preview** — watch S, T, A, R assemble as you answer.
    - **Beginner-friendly** — each letter is taught in one line at the moment you use it.
    - **Saved in your browser** — no accounts, automatic localStorage saves.
 
-5. **Examples** *(was "Social Proof" — relabeled Stage 6 so nothing claims a real customer)*
+6. **Examples** *(was "Social Proof" — relabeled Stage 6 so nothing claims a real customer)*
    - **Headline:** "See the kind of story you'll build."
    - **Honesty note:** "Illustrative examples from our own test runs — not real customer quotes."
    - Two example stories (each credited "Example story, not a real customer"): *"Went from a blank screen to a story I'd actually say in an interview — in ten minutes."* · *"Finally understood what S-T-A-R actually means."* (Swap for real quotes after the human test.)
 
-6. **CTA**
+7. **CTA**
    - **Headline:** "The hardest question, already answered."
    - Closing CTA: **"Write my first story — it's free."** · micro-assurance: "Saved automatically · works on any device · no sign-up."
 
