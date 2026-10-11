@@ -36,7 +36,8 @@ Work in build order. Each task group produces reviewable output.
 
 ## Task Group 4 — Hero section
 
-- [ ] In `index.html` inside `<main>`: `<h1>` headline "Your story, told in STAR." (Space Grotesk, large), `<p>` subheadline, CTA row (primary "Write my first story" + secondary "How it works"), trust line in `--color-text-muted`.
+- [ ] In `index.html` inside `<main>`: `<h1>` headline "Turn 'tell me about a time…' into an answer that lands." (Space Grotesk, large), `<p>` subheadline, CTA row (primary "Write my first story" + secondary "How it works"), trust line in `--color-text-muted`.
+  - *Stage-6 copy update (2026-09-17, peer-testing feedback):* headline/subheadline revised from the brand-tagline hero to a problem-first hero that names the audience ("New to interviews?") and the pain ("tell me about a time…"). Only the `<h1>`/`<p>` text changed — no markup, style, or token changes.
 - [ ] STAR preview mock card: a small surface card listing S · T · A · R with placeholder story snippets in JetBrains Mono, gold STAR labels, `--radius-md`. Purely visual — no JS.
 - [ ] CSS: hero layout (left copy, right card on wide screens; stacked on small screens), generous vertical spacing, background `--color-background` with quiet navy layering via surfaces only.
 - [ ] Hero motion: one load fade-in (CSS `@keyframes`, ~300–400ms) on the hero block. Button hover/focus microinteractions only. No scroll effects this step (motion budget).

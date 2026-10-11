@@ -52,7 +52,7 @@ MySTAR is a guided-coach app for total beginners learning the STAR interview for
 **Radius:** 4px controls · 8px cards · 12px large panels.
 
 **Approved hero copy (MISSION.md Section 8):**
-- Headline: "Your story, told in STAR."
-- Subheadline: "MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result — you watch the story take shape on screen, even if you've never heard of STAR before."
+- Headline: "Turn 'tell me about a time…' into an answer that lands."
+- Subheadline: "New to interviews? MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result, live on screen."
 - Primary CTA: "Write my first story" · Secondary: "How it works"
 - Trust line: "Free · works right in your browser · nothing to install"

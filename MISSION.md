@@ -82,6 +82,7 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 | 2026-09-17 | **Stage 5 complete** | — | Landing page built: base shell + tokens + Navbar + Hero + Problem/Solution/Features/Testers/CTA + Footer, motion + audit + review. Specs synced. | Done |
 | 2026-09-17 | Stage 6 pre-launch placeholders | CTA `#` target; fake testimonials | CTAs → `#solution` (safe interim); "Testers" relabeled **Examples** with an honesty note and "not a real customer" credits; brand logo → `#top`. | Done |
 | 2026-09-17 | Stage 6 git | Skip git vs commit locally vs push | `git init` + `.gitignore` + first commit **locally**; student pushes to GitHub/deploys when ready. | Done |
+| 2026-09-17 | Hero copy (peer-testing fix) | Tagline hero vs Problem-first vs Audience-first vs Outcome-first | **Problem-first.** Headline: "Turn 'tell me about a time…' into an answer that lands." Subheadline: "New to interviews? MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result, live on screen." Rationale: peer testers couldn't tell who it was for or what problem it solved. The old tagline stays as the brand tagline (`<title>` + footer). | Done |
 | *YYYY-MM-DD* | *e.g., Primary CTA* | *Waitlist vs Direct Purchase* | *Waitlist — lower friction for initial validation* | *Done* |
 | | | | | |
 | | | | | |
@@ -181,9 +182,10 @@ Stage-6 kit created in `build-lab/SPECS/2026-09-17-launch/`: `HUMAN_TEST.md` (th
 **Page sections, top to bottom:**
 
 1. **Hero**
-   - **Headline:** "Your story, told in STAR."
-   - **Subheadline:** "MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result — you watch the story take shape on screen, even if you've never heard of STAR before."
+   - **Headline:** "Turn 'tell me about a time…' into an answer that lands."
+   - **Subheadline:** "New to interviews? MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result, live on screen."
    - Primary CTA: **"Write my first story"** · secondary: "How it works" · trust line: "Free · works right in your browser · nothing to install"
+   - *(Copy revised 2026-09-17 after peer testing: the old headline was the brand tagline "Your story, told in STAR." — now kept only as the tagline in the `<title>` and footer. The hero now names the audience and the pain: see Decision Log.)*
 
 2. **Problem**
    - **Headline:** "You did the work. Retelling it is the hard part."
