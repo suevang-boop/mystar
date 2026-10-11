@@ -228,10 +228,10 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
    - **Honesty note:** "One worked example and two quick notes from our own writing — illustrative, not real customer testimonials."
    - Two example stories (each credited "Example story, not a real customer"): *"Went from a blank screen to a story I'd actually say in an interview — in ten minutes."* · *"Finally understood what S-T-A-R actually means."* (Swap for real quotes after the human test.)
    - **Worked example** *(added 2026-09-17)* — a full S/T/A/R story, de-identified from the founder's own experience (no company name, no internal tool names):
-     - **S:** A partner team received several pallets of perishable consumables they don't normally handle, so they asked me how to sort it out.
+     - **S:** A partner team received several pallets of perishable consumables — about 2,000 units — that they don't normally handle, so they asked me how to sort it out.
      - **T:** Find out why the pallets arrived, what the root cause was, and the right next step for the products.
      - **A:** I pulled the details from our internal tracking tools and advised the stakeholder. The units had already been liquidated for missing transparency codes, so I laid out two options: leave them as-is, or fix the root cause so sellable units could safely return to inventory.
-     - **R:** The team avoided re-handling units that were already liquidated — an estimated $50K in labor and cost — and worked with the upstream team so the issue wouldn't happen again.
+     - **R:** The team avoided re-handling the ~2,000 units that were already liquidated — an estimated $50K in labor and cost — and I escalated the root cause to the upstream team for a longer-term fix.
 
 7. **CTA**
    - **Headline:** "The hardest question, already answered."
