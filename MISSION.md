@@ -85,7 +85,8 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 | 2026-09-17 | Hero copy (peer-testing fix) | Tagline hero vs Problem-first vs Audience-first vs Outcome-first | **Problem-first.** Headline: "Turn 'tell me about a time…' into an answer that lands." Subheadline: "New to interviews? MySTAR interviews you one question at a time and builds your answer into Situation · Task · Action · Result, live on screen." Rationale: peer testers couldn't tell who it was for or what problem it solved. The old tagline stays as the brand tagline (`<title>` + footer). | Done |
 | 2026-09-17 | Ship & submit (Stage 6) | Where to host; repo owner | Pushed to GitHub (`suevang-boop/mystar`), deployed with GitHub Pages (serve from `main`/root), recorded submission. Repo is public; live at https://suevang-boop.github.io/mystar/. | Done |
 | 2026-09-17 | Scenario → STAR section | File upload vs paste; AI vs rules; auto vs assisted | **Paste + Form STAR**, **browser rules (no AI)**, **assisted (guess + user fixes)**. Plain-text only; no server; saved in `localStorage`. Spec: `SPECS/2026-09-17-scenario-to-star/`. Built on branch `feature/document-upload` with plain-JS parser tests (13 passing). | Done |
-| 2026-09-17 | Worked example (Examples section) | Add a full sample story? keep real or sanitize? | Added one **full S/T/A/R worked example** below the quotes. Copy **de-identified** (no company/internal tool/personal names) before publishing. Static card — no new motion. Spec: `SPECS/2026-09-17-worked-example/`. | Done |
+| 2026-09-17 | Worked example (Examples section) | Add a full sample story? keep real or sanitize? | Added one **full S/T/A/R worked example** below the quotes. Copy **de-identified** (no company/internal tool/personal names) before publishing. Static card — no new motion. Spec: `SPECS/2026-09-17-worked-example/`. | Superseded |
+| 2026-09-17 | Remove Examples section | Keep or cut the examples? | **Removed the whole Examples section** (quotes + worked example) at the founder's request. Dropped the nav link and deleted the unused CSS. Story preserved in `SPECS/2026-09-17-worked-example/` for the founder's own interview use. | Done |
 | 2026-09-17 | Download story button | Copy only, or also download a file? | Added a **Download** button beside **Copy story** — saves the preview as `my-star-story.txt` via the browser's Blob download (still no server). Secondary button, not a second CTA. Spec: `SPECS/2026-09-17-download-story/`. | Done |
 | *YYYY-MM-DD* | *e.g., Primary CTA* | *Waitlist vs Direct Purchase* | *Waitlist — lower friction for initial validation* | *Done* |
 | | | | | |
@@ -224,19 +225,11 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
    - **Beginner-friendly** — each letter is taught in one line at the moment you use it.
    - **Saved in your browser** — no accounts, automatic localStorage saves.
 
-6. **Examples** *(was "Social Proof" — relabeled Stage 6 so nothing claims a real customer)*
-   - **Headline:** "See the kind of story you'll build."
-   - **Honesty note:** "One worked example and two quick notes from our own writing — illustrative, not real customer testimonials."
-   - Two example stories (each credited "Example story, not a real customer"): *"Went from a blank screen to a story I'd actually say in an interview — in ten minutes."* · *"Finally understood what S-T-A-R actually means."* (Swap for real quotes after the human test.)
-   - **Worked example** *(added 2026-09-17)* — a full S/T/A/R story, de-identified from the founder's own experience (no company name, no internal tool names):
-     - **S:** A partner team received several pallets of perishable consumables — about 2,000 units — that they don't normally handle, so they asked me how to sort it out.
-     - **T:** Find out why the pallets arrived, what the root cause was, and the right next step for the products.
-     - **A:** I pulled the details from our internal tracking tools and advised the stakeholder. The units had already been liquidated for missing transparency codes, so I laid out two options: leave them as-is, or fix the root cause so sellable units could safely return to inventory.
-     - **R:** The team avoided re-handling the ~2,000 units that were already liquidated — an estimated $50K in labor and cost — and I escalated the root cause to the upstream team for a longer-term fix.
-
-7. **CTA**
+6. **CTA**
    - **Headline:** "The hardest question, already answered."
    - Closing CTA: **"Write my first story — it's free."** · micro-assurance: "Saved automatically · works on any device · no sign-up."
+
+*(The former "Examples" section — two illustrative quotes plus a worked example — was **removed 2026-09-17** at the founder's request. The story lives on in `SPECS/2026-09-17-worked-example/` for the founder's own interview use.)*
 
 ---
 
@@ -284,4 +277,4 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
 4. One primary CTA per view. Primary buttons: gold bg, dark navy text, weight 600. Secondary: transparent, `--color-border` outline.
 5. Motion budget (TECH.md): max 1 hero effect + 1 scroll effect + 1 microinteraction for the whole site.
 
-**This step builds:** base shell (tokens + reset + font loading) **plus** the Navbar and Hero section per Section 8 (Page Architecture). Navbar = surface background, sticky, wordmark "MySTAR", nav links (How it works / Features / Examples), gold CTA "Write my first story". Hero = approved headline + subheadline + primary/secondary CTA + trust line. Optional hero visual: a small "live STAR story preview" mock card using JetBrains Mono and gold highlights.
+**This step builds:** base shell (tokens + reset + font loading) **plus** the Navbar and Hero section per Section 8 (Page Architecture). Navbar = surface background, sticky, wordmark "MySTAR", nav links (How it works / Features), gold CTA "Write my first story". Hero = approved headline + subheadline + primary/secondary CTA + trust line. Optional hero visual: a small "live STAR story preview" mock card using JetBrains Mono and gold highlights.

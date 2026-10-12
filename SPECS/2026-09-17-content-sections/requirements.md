@@ -18,7 +18,7 @@ Six sections appended to the existing page, in order, after the Hero:
 1. **Problem** — headline + two supporting lines ("You did the work. Retelling it is the hard part.").
 2. **Solution** — headline + two supporting lines ("A coach that interviews the story out of you.").
 3. **Features** — headline + three feature cards. Live STAR preview · Beginner-friendly · Saved in your browser.
-4. **Examples** — headline + a short honesty note + two illustrative example stories in surface quote cards. *(Stage-6 change: originally "Social Proof" with placeholder tester quotes; relabeled so nothing claims a real customer.)*
+4. **Examples** — headline + a short honesty note + two illustrative example stories in surface quote cards. *(Stage-6 change: originally "Social Proof" with placeholder tester quotes; relabeled so nothing claims a real customer.)* **(Removed 2026-09-17 at the founder's request — the whole section, nav link, and its CSS were deleted. See `MISSION.md` decision log.)**
 5. **CTA** — headline + exactly one gold button + micro-assurance line.
 6. **Footer** — minimal: wordmark, tagline, two quiet links (How it works / Features), copyright line.
 
