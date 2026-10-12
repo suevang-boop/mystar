@@ -86,6 +86,7 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 | 2026-09-17 | Ship & submit (Stage 6) | Where to host; repo owner | Pushed to GitHub (`suevang-boop/mystar`), deployed with GitHub Pages (serve from `main`/root), recorded submission. Repo is public; live at https://suevang-boop.github.io/mystar/. | Done |
 | 2026-09-17 | Scenario → STAR section | File upload vs paste; AI vs rules; auto vs assisted | **Paste + Form STAR**, **browser rules (no AI)**, **assisted (guess + user fixes)**. Plain-text only; no server; saved in `localStorage`. Spec: `SPECS/2026-09-17-scenario-to-star/`. Built on branch `feature/document-upload` with plain-JS parser tests (13 passing). | Done |
 | 2026-09-17 | Worked example (Examples section) | Add a full sample story? keep real or sanitize? | Added one **full S/T/A/R worked example** below the quotes. Copy **de-identified** (no company/internal tool/personal names) before publishing. Static card — no new motion. Spec: `SPECS/2026-09-17-worked-example/`. | Done |
+| 2026-09-17 | Download story button | Copy only, or also download a file? | Added a **Download** button beside **Copy story** — saves the preview as `my-star-story.txt` via the browser's Blob download (still no server). Secondary button, not a second CTA. Spec: `SPECS/2026-09-17-download-story/`. | Done |
 | *YYYY-MM-DD* | *e.g., Primary CTA* | *Waitlist vs Direct Purchase* | *Waitlist — lower friction for initial validation* | *Done* |
 | | | | | |
 | | | | | |
@@ -214,7 +215,7 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
 4. **Builder — Scenario → STAR** *(added 2026-09-17; first slice of the real tool)*
    - **Headline:** "Paste a scenario. Get a STAR story."
    - **Intro:** "Paste a note, a scenario, or an example below and press Form STAR. The page sorts it into Situation · Task · Action · Result — then you move and edit the pieces until it reads right."
-   - A textarea + a **Form STAR** button (secondary, not a second gold CTA). The text is split into sentences, each guessed into S/T/A/R by simple rules; the user then moves/edits pieces. Live preview + **Copy story**; saved in `localStorage`.
+   - A textarea + a **Form STAR** button (secondary, not a second gold CTA). The text is split into sentences, each guessed into S/T/A/R by simple rules; the user then moves/edits pieces. Live preview + **Copy story** + **Download** (saves `my-star-story.txt`); saved in `localStorage`.
    - All in the browser — no AI, no server, no files. See `SPECS/2026-09-17-scenario-to-star/`.
 
 5. **Features**

@@ -8,6 +8,7 @@ const message = document.getElementById("builder-message");
 const resultBox = document.getElementById("builder-result");
 const preview = document.getElementById("star-preview");
 const copyButton = document.getElementById("copy-star");
+const downloadButton = document.getElementById("download-star");
 
 let state = { s: [], t: [], a: [], r: [] };
 
@@ -128,6 +129,21 @@ copyButton.addEventListener("click", () => {
     .writeText(preview.textContent)
     .then(() => showMessage("Copied to your clipboard."))
     .catch(() => showMessage("Could not copy — select the text and copy manually."));
+});
+
+downloadButton.addEventListener("click", () => {
+  const blob = new Blob([preview.textContent], { type: "text/plain" });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "my-star-story.txt";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  URL.revokeObjectURL(url);
+  showMessage("Downloaded your story.");
 });
 
 if (load() && LETTERS.some((letter) => state[letter].length > 0)) {
