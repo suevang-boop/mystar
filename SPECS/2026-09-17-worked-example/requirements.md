@@ -1,5 +1,7 @@
 # Worked Example in the Examples section — Requirements
 
+> **Status: REMOVED (2026-09-17).** The whole Examples section — including this worked example — was deleted from the live page at the founder's request (see `MISSION.md` decision log). The story text is kept here for the founder's own interview use.
+
 **Feature:** Add one full, finished STAR story ("worked example") to the Examples section so visitors see what a complete answer looks like — not just the two short quotes.
 **Date:** 2026-09-17
 **Author:** Founder + OpenCode
