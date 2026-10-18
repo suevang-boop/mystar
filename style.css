@@ -74,9 +74,10 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-/* Keep anchored sections clear of the sticky navbar */
-section[id] {
-  scroll-margin-top: var(--space-6);
+/* Keep anchored targets clear of the sticky navbar */
+section[id],
+#scenario-input {
+  scroll-margin-top: calc(var(--space-6) + var(--space-5));
 }
 
 /* =============================================
