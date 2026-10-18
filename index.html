@@ -72,7 +72,7 @@
 
     <section class="builder container" id="builder">
       <h2>Paste a scenario. Get a STAR story.</h2>
-      <p class="builder-intro">Paste a note, a scenario, or an example below and press Form STAR. The page sorts it into Situation · Task · Action · Result — then you move and edit the pieces until it reads right.</p>
+      <p class="builder-intro">Paste a note, a scenario, or an example below and press Form STAR. The page sorts it into Situation · Task · Action · Result — each part shows what to include — then you move and edit the pieces until it reads right.</p>
 
       <label class="builder-label" for="scenario-input">Your scenario</label>
       <textarea id="scenario-input" class="builder-input" rows="6" placeholder="Paste your scenario or an example here…"></textarea>
@@ -86,18 +86,42 @@
         <div class="star-buckets">
           <div class="bucket">
             <h3 class="bucket-title"><span class="bucket-code">S</span> Situation</h3>
+            <p class="bucket-goal">Set the scene &amp; context · 15–20% of your answer</p>
+            <ul class="bucket-hints">
+              <li>Where were you working or studying?</li>
+              <li>What was the context or background of the challenge?</li>
+              <li>Who was affected?</li>
+            </ul>
             <div class="bucket-list" id="bucket-s"></div>
           </div>
           <div class="bucket">
             <h3 class="bucket-title"><span class="bucket-code">T</span> Task</h3>
+            <p class="bucket-goal">Define your responsibility or challenge · 10–15% of your answer</p>
+            <ul class="bucket-hints">
+              <li>What specific problem needed to be solved?</li>
+              <li>What was your individual goal or responsibility?</li>
+              <li>What were the deadlines, KPIs, or standards of success?</li>
+            </ul>
             <div class="bucket-list" id="bucket-t"></div>
           </div>
           <div class="bucket">
             <h3 class="bucket-title"><span class="bucket-code">A</span> Action</h3>
+            <p class="bucket-goal">Detail the exact steps you took · 50–60% of your answer</p>
+            <ul class="bucket-hints">
+              <li>What tools, methods, or strategies did you use?</li>
+              <li>How did you handle roadblocks or disagreements?</li>
+              <li>Why did you choose that approach over others?</li>
+            </ul>
             <div class="bucket-list" id="bucket-a"></div>
           </div>
           <div class="bucket">
             <h3 class="bucket-title"><span class="bucket-code">R</span> Result</h3>
+            <p class="bucket-goal">Quantify the outcome &amp; lessons learned · 15–20% of your answer</p>
+            <ul class="bucket-hints">
+              <li>What was the quantifiable impact (%, $, hours)?</li>
+              <li>What feedback did you receive?</li>
+              <li>What lesson did you take away?</li>
+            </ul>
             <div class="bucket-list" id="bucket-r"></div>
           </div>
         </div>
@@ -111,6 +135,27 @@
           </div>
         </div>
       </div>
+
+      <figure class="star-sample">
+        <figcaption class="sample-title">EXAMPLE STAR RESPONSE</figcaption>
+        <p class="sample-question">Interviewer: "Tell me about a time you had to deal with a tight deadline and competing priorities."</p>
+        <div class="sample-row">
+          <span class="sample-label">S</span>
+          <p class="sample-text"><strong>Situation.</strong> In my previous role as a Data Analyst, our team was mid-way through migrating our legacy database to AWS when a major client suddenly asked for an urgent custom analytics report ahead of a key quarterly review.</p>
+        </div>
+        <div class="sample-row">
+          <span class="sample-label">T</span>
+          <p class="sample-text"><strong>Task.</strong> I was tasked with building and delivering the report within 48 hours — without delaying the critical database migration.</p>
+        </div>
+        <div class="sample-row">
+          <span class="sample-label">A</span>
+          <p class="sample-text"><strong>Action.</strong> I prioritized my workflow, separating high-risk migration tasks from ones I could automate. I met with the client to trim the request to the essential KPIs, then spent day one automating the data pipelines so they ran unattended overnight — freeing day two to write SQL, validate the data, and build the dashboard.</p>
+        </div>
+        <div class="sample-row">
+          <span class="sample-label">R</span>
+          <p class="sample-text"><strong>Result.</strong> I delivered the dashboard four hours early, the migration finished on schedule with zero downtime, and the automated pipeline cut weekly maintenance time by 15%.</p>
+        </div>
+      </figure>
     </section>
 
     <section class="features container" id="features">
@@ -124,7 +169,7 @@
         <div class="feature-card">
           <span class="feature-badge">02</span>
           <h3 class="feature-title">Beginner-friendly</h3>
-          <p class="feature-text">Each letter is taught in one line at the moment you use it.</p>
+          <p class="feature-text">Every part shows its goal and guiding questions where you use it.</p>
         </div>
         <div class="feature-card">
           <span class="feature-badge">03</span>
