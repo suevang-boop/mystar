@@ -88,6 +88,7 @@ Welcome to your Founder Notebook. This is the single source of truth for your st
 | 2026-09-17 | Worked example (Examples section) | Add a full sample story? keep real or sanitize? | Added one **full S/T/A/R worked example** below the quotes. Copy **de-identified** (no company/internal tool/personal names) before publishing. Static card — no new motion. Spec: `SPECS/2026-09-17-worked-example/`. | Superseded |
 | 2026-09-17 | Remove Examples section | Keep or cut the examples? | **Removed the whole Examples section** (quotes + worked example) at the founder's request. Dropped the nav link and deleted the unused CSS. Story preserved in `SPECS/2026-09-17-worked-example/` for the founder's own interview use. | Done |
 | 2026-09-17 | STAR structure in builder | Where to teach the full STAR format? | Show the objective + share of answer + guiding questions **in each bucket**, and add one full **example response** below. Parser unchanged; static text. Spec: `SPECS/2026-09-17-star-structure/`. | Done |
+| 2026-09-17 | Save scope (privacy) | Persistent (`localStorage`) vs per-visit (`sessionStorage`)? | Switched to **per-visit saving** so the founder's entry no longer leaks to other visitors sharing the browser. Work persists for the current tab; a new tab/visitor starts blank. Updated the "Saved for your visit" feature card. | Done |
 | 2026-09-17 | Download story button | Copy only, or also download a file? | Added a **Download** button beside **Copy story** — saves the preview as `my-star-story.txt` via the browser's Blob download (still no server). Secondary button, not a second CTA. Spec: `SPECS/2026-09-17-download-story/`. | Done |
 | *YYYY-MM-DD* | *e.g., Primary CTA* | *Waitlist vs Direct Purchase* | *Waitlist — lower friction for initial validation* | *Done* |
 | | | | | |
@@ -183,7 +184,7 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
 - **Audience:** people who have never used STAR format before.
 - **The magic moment:** the story *takes shape on screen live* as they answer — S fills in, then T, then A, then R — so they physically watch their story build itself.
 - **Teaching in passing:** a tiny "here's how S works" hint at each step — no separate tutorial.
-- **Storage:** saves automatically in the user's own browser (localStorage). No accounts, no server, no database plumbing in V1.
+- **Storage:** saves automatically for the current visit only (`sessionStorage`) — no accounts, no server, no shared data. A new visitor (or new tab) starts with a blank page.
 - **Deliberately cut for V1:** coaching delivery out loud, the converter, the practice tool, and any fancy saved-library browser.
 
 **Build style:** rough first — start as a single page held together with string, ship it, and put it in front of real beginners. The live-take-shape moment is the hypothesis to prove.
@@ -217,7 +218,7 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
 4. **Builder — Scenario → STAR** *(added 2026-09-17; first slice of the real tool)*
    - **Headline:** "Paste a scenario. Get a STAR story."
    - **Intro:** "Paste a note, a scenario, or an example below and press Form STAR. The page sorts it into Situation · Task · Action · Result — each part shows what to include — then you move and edit the pieces until it reads right."
-   - A textarea + a **Form STAR** button (secondary, not a second gold CTA). The text is split into sentences, each guessed into S/T/A/R by simple rules; the user then moves/edits pieces. Live preview + **Copy story** + **Download** (saves `my-star-story.txt`); saved in `localStorage`.
+   - A textarea + a **Form STAR** button (secondary, not a second gold CTA). The text is split into sentences, each guessed into S/T/A/R by simple rules; the user then moves/edits pieces. Live preview + **Copy story** + **Download** (saves `my-star-story.txt`); saved for the visit (`sessionStorage` — clears when the tab closes, so the next visitor starts blank).
    - **STAR structure guidance** *(added 2026-09-17)* — each bucket shows the part's goal + share of the answer and three guiding questions:
      - **S — Situation:** Set the scene & context · 15–20%. *Where were you? What was the background? Who was affected?*
      - **T — Task:** Define your responsibility or challenge · 10–15%. *What problem needed solving? What was your own goal? What were the deadlines/KPIs?*
@@ -230,7 +231,7 @@ Deployed via GitHub Pages (serve from `main` / root); verified HTTP 200.
    - **Headline:** "Everything you need. Nothing you don't."
    - **Live STAR preview** — watch S, T, A, R assemble as you answer.
    - **Beginner-friendly** — every part shows its goal and guiding questions where you use it.
-   - **Saved in your browser** — no accounts, automatic localStorage saves.
+   - **Saved for your visit** — no accounts. It clears when you leave, so the next visitor starts fresh.
 
 6. **CTA**
    - **Headline:** "The hardest question, already answered."

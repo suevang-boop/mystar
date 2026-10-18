@@ -18,7 +18,7 @@ function showMessage(text) {
 
 function save() {
   try {
-    localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    sessionStorage.setItem(STORE_KEY, JSON.stringify(state));
   } catch (error) {
     showMessage("Saving in the browser is unavailable.");
   }
@@ -26,7 +26,12 @@ function save() {
 
 function load() {
   try {
-    const raw = localStorage.getItem(STORE_KEY);
+    localStorage.removeItem(STORE_KEY);
+  } catch (error) {
+    // skip cleanup if localStorage is unavailable
+  }
+  try {
+    const raw = sessionStorage.getItem(STORE_KEY);
     if (!raw) return false;
     const saved = JSON.parse(raw);
     if (!saved || typeof saved !== "object") return false;

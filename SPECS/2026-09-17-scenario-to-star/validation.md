@@ -24,7 +24,7 @@
 - [ ] The assembled preview and the buckets always agree.
 
 ### 4. Persistence
-- [ ] After editing, a page refresh keeps the work (`localStorage`).
+- [ ] After editing, a page refresh keeps the work for that visit (`sessionStorage`); a new tab/visitor starts blank.
 - [ ] "Copy story" copies the assembled STAR text to the clipboard.
 
 ### 5. Design discipline
