@@ -32,7 +32,7 @@
 - [ ] Each card: the text, a small set of **move** controls (S T A R buttons), and inline **edit** (a small `<textarea>` or `contenteditable`).
 - [ ] On any move/edit: re-render the four buckets and the assembled preview.
 - [ ] **Copy story** copies the assembled STAR text to the clipboard.
-- [ ] Persist the current result to `localStorage`; restore it on page load.
+- [ ] Persist the current result for the visit (`sessionStorage`); restore it on page load.
 
 **Checks:** no console errors; no network requests are made.
 
