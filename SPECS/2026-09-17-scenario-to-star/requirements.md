@@ -24,7 +24,7 @@ The constitution forbids backends, frameworks, and any server, so every bit of p
 - Show four buckets (**S T A R**) as panels of movable cards.
 - Let the user **move** a piece to a different letter and **edit** its text.
 - A live assembled STAR preview plus a "Copy story" action.
-- Save the current result for the visit (`sessionStorage`) so it survives a refresh but is gone for the next visitor.
+- Do not save the result: the page starts blank on every load (refresh or return).
 - All styling uses the existing design tokens; motion stays within the budget.
 
 ## Out of Scope (this feature does NOT do)
@@ -41,7 +41,7 @@ The constitution forbids backends, frameworks, and any server, so every bit of p
 2. **Paste + a button (not live-as-you-type).** — *(2026-09-17)* The user pastes their scenario, then presses **Form STAR**. Predictable and simple; no parsing on every keystroke.
 3. **Assisted split: the tool guesses, the user fixes.** — *(2026-09-17)* Rule-based guesses are imperfect; letting the user move/edit pieces keeps the result trustworthy and teaches the format.
 4. **No file upload; nothing leaves the browser.** — *(2026-09-17)* Simpler than file reading, and private by default.
-5. **Persistence = `sessionStorage`.** — *(2026-09-17; changed from `localStorage` 2026-09-17)* Saves for the current visit only, so one visitor's entry never leaks to the next. No database.
+5. **No persistence.** — *(changed 2026-09-17; was `localStorage`, then `sessionStorage`)* Nothing is saved. The page starts blank every load, and refreshing/leaving resets it, so no entry is ever left behind for the next visitor. No database.
 6. **Parsing is a small set of pure functions with a clear shape.** — *(2026-09-17)* `parseToStar(text)` returns `{ s: [...], t: [...], a: [...], r: [...] }`. Pure functions (no DOM) are easy to read, reuse, and test. Keyword cues are the fallback when the text has no `Situation:/Task:/Action:/Result:` labels.
 
 ## Non-Negotiable Rules (from the constitution)

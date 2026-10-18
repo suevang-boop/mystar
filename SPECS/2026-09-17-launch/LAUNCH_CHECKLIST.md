@@ -6,7 +6,7 @@ Stage 6 of the roadmap. Work top to bottom.
 
 These are unfinished spots that would look broken to a stranger.
 
-- [x] **Every button says `href="#"`.** *(DONE: all gold CTAs now point to `#solution`.)*
+- [x] **Every button says `href="#"`.** *(DONE: gold CTAs first pointed to `#solution`; updated 2026-09-17 to `#scenario-input` so "Write my first story" jumps to the input box.)*
 - [x] **Testimonials are marked "(placeholder)".** *(DONE: section relabeled "Examples" with an honesty note; each card reads "Example story, not a real customer".)*
 - [x] The brand/logo link (`MySTAR` top-left) also points to `#` — *(DONE: points to `#top`.)*
 

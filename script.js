@@ -16,32 +16,24 @@ function showMessage(text) {
   message.textContent = text;
 }
 
-function save() {
+function clearStored() {
   try {
-    sessionStorage.setItem(STORE_KEY, JSON.stringify(state));
+    localStorage.removeItem(STORE_KEY);
+    sessionStorage.removeItem(STORE_KEY);
   } catch (error) {
-    showMessage("Saving in the browser is unavailable.");
+    // storage unavailable — nothing to clear
   }
 }
 
-function load() {
-  try {
-    localStorage.removeItem(STORE_KEY);
-  } catch (error) {
-    // skip cleanup if localStorage is unavailable
-  }
-  try {
-    const raw = sessionStorage.getItem(STORE_KEY);
-    if (!raw) return false;
-    const saved = JSON.parse(raw);
-    if (!saved || typeof saved !== "object") return false;
-    LETTERS.forEach((letter) => {
-      state[letter] = Array.isArray(saved[letter]) ? saved[letter] : [];
-    });
-    return true;
-  } catch (error) {
-    return false;
-  }
+function reset() {
+  state = { s: [], t: [], a: [], r: [] };
+  input.value = "";
+  message.textContent = "";
+  preview.textContent = "";
+  resultBox.hidden = true;
+  LETTERS.forEach((letter) => {
+    document.getElementById("bucket-" + letter).innerHTML = "";
+  });
 }
 
 function renderPreview() {
@@ -66,7 +58,6 @@ function makeCard(letter, index, text) {
   body.addEventListener("input", () => {
     state[letter][index] = body.textContent.trim();
     renderPreview();
-    save();
   });
 
   const controls = document.createElement("div");
@@ -110,7 +101,6 @@ function renderBuckets() {
     });
   });
   renderPreview();
-  save();
 }
 
 function render() {
@@ -151,7 +141,13 @@ downloadButton.addEventListener("click", () => {
   showMessage("Downloaded your story.");
 });
 
-if (load() && LETTERS.some((letter) => state[letter].length > 0)) {
-  resultBox.hidden = false;
-  render();
-}
+clearStored();
+
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    clearStored();
+    reset();
+  }
+});
+
+window.addEventListener("pagehide", clearStored);
